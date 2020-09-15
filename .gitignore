@@ -30,3 +30,5 @@ build
 /.metadata/
 
 .gradle
+
+/Videos
