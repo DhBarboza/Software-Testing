@@ -7,15 +7,15 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-	Conversor conver = new Conversor();
-	
-    @Test public void converterCelsiusToFahrenheit() {
-    	double f = conver.celsiusToFahrenheit(20);
-    	assertEquals(68, f);
+    @Test public void testCoverter(){
+        Conversor convert = new Conversor();
+        double results = convert.celsiusToFahrenheit(20);
+        assertEquals(68, results, 0);
     }
-    
-    @Test public void converterFahrenheitToCelsius() {
-    	double c = conver.fahrenheitToCelsius(68);
-    	assertEquals(20, c);
+
+    @Test public void testCoverterf() {
+        Conversor convert = new Conversor();
+        double result = convert.fahrenheitToCelsius(68);
+        assertEquals(20, result, 0);
     }
 }
