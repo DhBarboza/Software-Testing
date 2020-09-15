@@ -7,15 +7,29 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class LibraryTest {
-    @Test public void testCoverter(){
+    @Test public void testCoverterCtF(){
         Conversor convert = new Conversor();
         double results = convert.celsiusToFahrenheit(20);
         assertEquals(68, results, 0);
     }
 
-    @Test public void testCoverterf() {
+    @Test public void testCoverterFtC() {
         Conversor convert = new Conversor();
         double result = convert.fahrenheitToCelsius(68);
         assertEquals(20, result, 0);
     }
+
+    @Test public void testCoverterCtK() {
+        Conversor convert = new Conversor();
+        double result = convert.celsiusToKelvin(20);
+        assertEquals(293.15, result, 0);
+    }
+
+    @Test public void testCoverterKtC() {
+        Conversor convert = new Conversor();
+        double result = convert.kelvinToCelsius(293.15);
+        assertEquals(20, result, 0);
+    }
+
+
 }
