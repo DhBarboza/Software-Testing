@@ -5,7 +5,7 @@ plugins {
     id 'application'
 }
 
-mainClassName 'atividade_pratica_01.Conversor'
+mainClassName = 'atividade_pratica_01.Conversor'
 
 repositories {
     mavenCentral()

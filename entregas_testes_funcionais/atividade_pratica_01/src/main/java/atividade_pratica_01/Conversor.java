@@ -5,12 +5,11 @@ package atividade_pratica_01;
 
 public class Conversor {
     public double celsiusParaFahrenheit(double c) {
-        double f = 9 * c / 5 + 32;
-        return f;
+        return 9 * c / 5 + 32;
     }
 
     public double fahrenheitParaCelsius(double f) {
-        double c = (f - 32) * 5 / 9;
-        return  c;
+        return (f - 32) * 5 / 9;
+        
     }
 }
