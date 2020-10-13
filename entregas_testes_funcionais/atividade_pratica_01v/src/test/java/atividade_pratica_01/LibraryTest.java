@@ -15,15 +15,13 @@ public class LibraryTest {
 
         @Test public void testPalavra() {
             Conversor convert = new Conversor();
-            double results = convert.celsiusParaFahrenheit('a');
-            assertEquals(0, results, 0);
+            assertEquals(0, convert.celsiusParaFahrenheit('a'), "fail argument not found");
         }
     
         //Teste com caractere Coringa:
         @Test public void testCoringa() {
             Conversor convert = new Conversor();
-            double results = convert.celsiusParaFahrenheit('@');
-            assertEquals(0, results, 0);
+            assertEquals(0, convert.fahrenheitParaCelsius('@'), "fail argument not found");
         }
 
         
@@ -32,16 +30,14 @@ public class LibraryTest {
         @Test
         public void testConvertforFahrenheit() {
             Conversor convert = new Conversor();
-            double results = convert.celsiusParaFahrenheit(20);
-            assertEquals(68, results, 0);
+            assertEquals(68, convert.celsiusParaFahrenheit(20));
         }
     
         //Dado a temperatura 68ºf fahrenheit o resultado esperado é 20ºc Celsius
         @Test
         public void testConvertforCelsius() {
             Conversor convert = new Conversor();
-            double result = convert.fahrenheitParaCelsius(68);
-            assertEquals(20, result, 0);
+            assertEquals(20, convert.fahrenheitParaCelsius(68));
         }
     
 }

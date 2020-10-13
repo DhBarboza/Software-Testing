@@ -1,7 +1,11 @@
 
 plugins {
     id 'java-library'
+    id 'java'
+    id 'application'
 }
+
+mainClassName 'atividade_pratica_01.Conversor'
 
 repositories {
     mavenCentral()
